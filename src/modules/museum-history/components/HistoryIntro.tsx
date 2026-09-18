@@ -15,7 +15,7 @@ export function HistoryIntro({ className }: HistoryIntroProps) {
   return (
     <div
       className={cn(
-        'relative mx-auto flex w-full max-w-[1400px] flex-col items-center justify-center px-6 py-[18vh] text-center text-black',
+        'relative mx-auto z-50 flex w-full max-w-[1400px] flex-col items-center justify-center px-6 py-[18vh] text-center text-black',
         className,
       )}
     >
@@ -51,20 +51,6 @@ export function HistoryIntro({ className }: HistoryIntroProps) {
         ) : null}
         {after}
       </h2>
-
-      <p
-        data-history-header-item
-        className="relative mt-8 max-w-[44ch] font-mono text-[0.66rem] font-medium uppercase tracking-[0.34em] text-black/65"
-      >
-        {lead}
-      </p>
-
-      <div
-        data-history-header-item
-        className="relative mt-14 flex flex-col items-center gap-3"
-      >
-        <span aria-hidden className="h-6 w-px bg-black/55" />
-      </div>
     </div>
   );
 }

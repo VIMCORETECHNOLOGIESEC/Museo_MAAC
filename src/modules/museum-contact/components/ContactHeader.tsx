@@ -27,7 +27,7 @@ export function ContactHeader({
 
       <h2
         data-history-header-item
-        className="mt-6 max-w-[12ch] font-sans text-[clamp(3rem,7.6vw,9rem)] font-black leading-[0.84] tracking-[-0.07em] text-black"
+        className="mt-6 max-w-[12ch] font-sans text-[clamp(3rem,7.6vw,9rem)] font-black leading-[0.84] tracking-[-0.07em] text-black md:text-[clamp(1.5rem,5vw,7rem)]"
       >
         {title}.
       </h2>

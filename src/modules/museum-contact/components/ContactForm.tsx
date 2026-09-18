@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils";
-import type { ContactFormFields } from "../hooks/useContactForm";
+import { cn } from '@/lib/utils';
+import type { ContactFormFields } from '../hooks/useContactForm';
 
 type ContactFormProps = {
   form: ContactFormFields;
@@ -9,7 +9,7 @@ type ContactFormProps = {
 };
 
 const fieldClass =
-  "block w-full border border-black bg-white px-4 py-3 font-sans text-body text-black placeholder:text-black/35 focus:border-black focus:bg-black/[0.02] focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-0";
+  'block w-full border border-black bg-white px-4 py-3 font-sans text-body text-black placeholder:text-black/35 focus:border-black focus:bg-black/[0.02] focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-0';
 
 export function ContactForm({
   form,
@@ -20,7 +20,7 @@ export function ContactForm({
   return (
     <form
       onSubmit={onSubmit}
-      className={cn("flex flex-col gap-8", className)}
+      className={cn('flex flex-col gap-8', className)}
       noValidate={false}
     >
       <div className="flex flex-col gap-3">
@@ -37,7 +37,7 @@ export function ContactForm({
           type="text"
           required
           value={form.name}
-          onChange={(e) => onChange("name", e.target.value)}
+          onChange={(e) => onChange('name', e.target.value)}
           className={fieldClass}
           autoComplete="name"
           placeholder="Tu nombre completo"
@@ -58,7 +58,7 @@ export function ContactForm({
           type="email"
           required
           value={form.email}
-          onChange={(e) => onChange("email", e.target.value)}
+          onChange={(e) => onChange('email', e.target.value)}
           className={fieldClass}
           autoComplete="email"
           placeholder="tu@correo.com"
@@ -79,16 +79,14 @@ export function ContactForm({
           required
           rows={6}
           value={form.message}
-          onChange={(e) => onChange("message", e.target.value)}
-          className={cn(fieldClass, "h-auto resize-none leading-relaxed")}
+          onChange={(e) => onChange('message', e.target.value)}
+          className={cn(fieldClass, 'h-auto resize-none leading-relaxed')}
           placeholder="Escribe tu mensaje…"
         />
       </div>
 
       <div className="flex items-center justify-between border-t border-black pt-5">
-        <span className="font-mono text-[0.6rem] uppercase tracking-[0.34em] text-black/55">
-          /FORM · v.04
-        </span>
+        <span className="font-mono text-[0.6rem] uppercase tracking-[0.34em] text-black/55"></span>
         <button
           type="submit"
           className="group inline-flex items-center gap-3 bg-black px-7 py-4 font-mono text-xs font-semibold tracking-[0.22em] text-white transition-colors hover:bg-white hover:text-black focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"

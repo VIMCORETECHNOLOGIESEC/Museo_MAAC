@@ -4,7 +4,7 @@
   --color-background: hsl(40 20% 98% / <alpha-value>);
   --color-foreground: hsl(30 15% 12% / <alpha-value>);
 
-  --color-surface: #f7ebdb;
+  --color-surface: #f5e9d8;
   --color-surface-elevated: hsl(40 15% 96% / <alpha-value>);
 
   --color-muted: hsl(40 12% 94% / <alpha-value>);
@@ -23,7 +23,7 @@
   --color-destructive: hsl(0 70% 45% / <alpha-value>);
   --color-destructive-foreground: hsl(40 20% 98% / <alpha-value>);
 
-  --color-intro-background: #f7ebdb;
+  --color-intro-background: #f5e9d8;
   --color-intro-ink: #4a2d26;
 
   --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
