@@ -120,7 +120,7 @@
 }
 
 .maac-intro-icon {
-  animation: maac-intro-icon-in var(--duration-slow) var(--ease-out-soft) both;
+  animation: maac-intro-icon-in 600ms var(--ease-out-soft) both;
 }
 
 @keyframes maac-intro-draw {

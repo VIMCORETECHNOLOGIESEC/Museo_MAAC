@@ -15,7 +15,7 @@ export function MuseumFooter({
     <footer
       className={`relative w-full h-dvh overflow-hidden bg-black text-white ${className ?? ''}`}
     >
-      <div className="pointer-events-none absolute inset-x-0 top-0 z-20 mx-auto flex max-w-[1800px] items-baseline justify-between px-6 pt-6 font-mono text-[0.6rem] tracking-[0.34em] text-white/65 sm:px-12 lg:px-[clamp(3rem,6.2vw,7rem)]">
+      <div className="pointer-events-none absolute inset-x-0 top-0 z-20 mx-auto flex max-w-[1800px] items-baseline justify-between px-6 pt-6 font-mono text-[1.2rem] tracking-[0.34em] text-white/65 sm:px-12 lg:px-[clamp(3rem,6.2vw,7rem)]">
         <span>SECTOR_06 // FOOTER</span>
         <span className="hidden md:inline">02°11′08″S · 79°52′34″O</span>
         <span>v.04</span>
@@ -29,7 +29,7 @@ export function MuseumFooter({
             </h2>
 
             <nav aria-label="Footer">
-              <ul className="flex flex-wrap items-center gap-x-8 gap-y-3 font-mono text-[0.66rem] uppercase tracking-[0.34em]">
+              <ul className="flex flex-wrap items-center gap-x-8 gap-y-3 font-mono text-[1.32rem] uppercase tracking-[0.34em]">
                 {data.links.map((link) => (
                   <li key={link.label}>
                     <a
@@ -46,7 +46,7 @@ export function MuseumFooter({
 
           <div className="mt-16 grid grid-cols-1 gap-6 border-t border-white/30 pt-6 md:grid-cols-3">
             <div className="flex flex-col gap-1">
-              <span className="font-mono text-[0.6rem] uppercase tracking-[0.34em] text-white/55">
+              <span className="font-mono text-[1.2rem] uppercase tracking-[0.34em] text-white/55">
                 DIRECCIÓN
               </span>
               <span className="font-sans text-body leading-7 text-white/85">
@@ -57,7 +57,7 @@ export function MuseumFooter({
             </div>
 
             <div className="flex flex-col gap-1">
-              <span className="font-mono text-[0.6rem] uppercase tracking-[0.34em] text-white/55">
+              <span className="font-mono text-[1.2rem] uppercase tracking-[0.34em] text-white/55">
                 CONTACTO
               </span>
               <span className="font-sans text-body leading-7 text-white/85">
@@ -68,7 +68,7 @@ export function MuseumFooter({
             </div>
 
             <div className="flex flex-col gap-1 md:items-end">
-              <span className="font-mono text-[0.6rem] uppercase tracking-[0.34em] text-white/55">
+              <span className="font-mono text-[1.2rem] uppercase tracking-[0.34em] text-white/55">
                 HORARIO
               </span>
               <span className="font-sans text-body leading-7 text-white/85 md:text-right">
@@ -85,17 +85,17 @@ export function MuseumFooter({
 
       <div className="mx-auto mt-16 w-full max-w-[1800px] border-t border-white/30 px-6 py-6 sm:px-12 lg:px-[clamp(3rem,6.2vw,7rem)]">
         <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-          <span className="font-mono text-[0.6rem] uppercase tracking-[0.34em] text-white/65">
+          <span className="font-mono text-[1.2rem] uppercase tracking-[0.34em] text-white/65">
             {data.copyright}
           </span>
-          <span className="font-mono text-[0.6rem] uppercase tracking-[0.34em] text-white/45">
+          <span className="font-mono text-[1.2rem] uppercase tracking-[0.34em] text-white/45">
             {data.legal}
           </span>
         </div>
       </div>
 
       <div className="mx-auto w-full max-w-[1800px] px-6 pb-6 sm:px-12 lg:px-[clamp(3rem,6.2vw,7rem)]">
-        <div className="flex items-center justify-between font-mono text-[0.6rem] tracking-[0.34em] text-white/45">
+        <div className="flex items-center justify-between font-mono text-[1.2rem] tracking-[0.34em] text-white/45">
           <span>END_OF_PAGE</span>
           <span className="hidden md:inline">
             MAAC // GYE // MINISTERIO DE CULTURA Y PATRIMONIO

@@ -33,7 +33,7 @@ export function HistoryIntro({ className }: HistoryIntroProps) {
         className="relative flex items-center gap-4"
       >
         <span aria-hidden className="h-px w-8 bg-black/40 md:w-12" />
-        <span className="font-mono text-[0.62rem] font-semibold uppercase tracking-[0.34em] text-black/70">
+        <span className="font-mono text-[1.24rem] font-semibold uppercase tracking-[0.34em] text-black/70">
           {eyebrow}
         </span>
         <span aria-hidden className="h-px w-8 bg-black/40 md:w-12" />

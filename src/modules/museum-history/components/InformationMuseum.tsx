@@ -28,7 +28,7 @@ export function InformationMuseum() {
           </div>
 
           <div className="relative z-10 flex flex-col justify-between px-6 py-12 sm:px-12 lg:px-[clamp(3rem,6.2vw,7rem)] lg:py-16">
-            <div className="flex items-baseline justify-between font-mono text-[0.62rem] tracking-[0.34em] text-black/55">
+            <div className="flex items-baseline justify-between font-mono text-[1.24rem] tracking-[0.34em] text-black/55">
               <span data-history-header-item>SECTOR_01</span>
               <span data-history-header-item>02°11′08″S · 79°52′34″O</span>
             </div>
@@ -51,7 +51,7 @@ export function InformationMuseum() {
 
             <div className="max-w-md border-t border-black pt-5">
               <p
-                className="font-mono text-[0.62rem] font-medium uppercase tracking-[0.34em] text-black"
+                className="font-mono text-[1.24rem] font-medium uppercase tracking-[0.34em] text-black"
                 data-history-entry
                 data-history-entry-align="left"
               >
@@ -68,7 +68,7 @@ export function InformationMuseum() {
               </p>
               <a
                 href="#coleccion"
-                className="mt-7 inline-flex items-center gap-3 bg-black px-7 py-4 font-mono text-xs font-semibold tracking-[0.22em] text-white transition-colors hover:bg-white hover:text-black focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"
+                className="mt-7 inline-flex items-center gap-3 bg-black px-7 py-4 font-mono text-[1.5rem] font-semibold tracking-[0.22em] text-white transition-colors hover:bg-white hover:text-black focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"
                 data-history-entry
                 data-history-entry-align="left"
               >
@@ -85,28 +85,28 @@ export function InformationMuseum() {
               className="h-[82%] w-auto max-w-[82%] object-contain"
             />
 
-            <span className="absolute top-6 left-1/2 -translate-x-1/2 font-mono text-[0.6rem] tracking-[0.34em] text-black">
+            <span className="absolute top-6 left-1/2 -translate-x-1/2 font-mono text-[1.2rem] tracking-[0.34em] text-black">
               N
             </span>
-            <span className="absolute bottom-6 left-1/2 -translate-x-1/2 font-mono text-[0.6rem] tracking-[0.34em] text-black/55">
+            <span className="absolute bottom-6 left-1/2 -translate-x-1/2 font-mono text-[1.2rem] tracking-[0.34em] text-black/55">
               S
             </span>
-            <span className="absolute top-1/2 right-6 -translate-y-1/2 font-mono text-[0.6rem] tracking-[0.34em] text-black/55">
+            <span className="absolute top-1/2 right-6 -translate-y-1/2 font-mono text-[1.2rem] tracking-[0.34em] text-black/55">
               E
             </span>
-            <span className="absolute top-1/2 left-6 -translate-y-1/2 font-mono text-[0.6rem] tracking-[0.34em] text-black/55">
+            <span className="absolute top-1/2 left-6 -translate-y-1/2 font-mono text-[1.2rem] tracking-[0.34em] text-black/55">
               W
             </span>
 
-            <div className="absolute top-6 left-6 font-mono text-[0.6rem] uppercase tracking-[0.34em] text-black/55">
+            <div className="absolute top-6 left-6 font-mono text-[1.2rem] uppercase tracking-[0.34em] text-black/55">
               FIG_01 / LOC
             </div>
-            <div className="absolute bottom-6 right-6 max-w-44 border-t border-black/70 pt-2 text-right font-mono text-[0.6rem] uppercase tracking-[0.22em] text-black/80">
+            <div className="absolute bottom-6 right-6 max-w-44 border-t border-black/70 pt-2 text-right font-mono text-[1.2rem] uppercase tracking-[0.22em] text-black/80">
               MALECÓN SIMÓN BOLÍVAR
               <br />
               GUAYAQUIL · EC
             </div>
-            <div className="absolute bottom-6 left-6 font-mono text-[0.6rem] uppercase tracking-[0.34em] text-black/45">
+            <div className="absolute bottom-6 left-6 font-mono text-[1.2rem] uppercase tracking-[0.34em] text-black/45">
               ⊕ ORIGIN
             </div>
           </div>
@@ -122,20 +122,20 @@ export function InformationMuseum() {
             className="pointer-events-none absolute left-6 top-6 z-20 font-serif text-3xl leading-none text-[#f7ead9]/45 sm:left-12 sm:top-10 sm:text-4xl lg:left-16"
           >
             <span className="block">𓂀 𓆣</span>
-            <span className="mt-2 block text-xs tracking-[0.45em]">𓏏 𓎛 𓂋</span>
+            <span className="mt-2 block text-[1.5rem] tracking-[0.45em]">𓏏 𓎛 𓂋</span>
           </div>
           <div
             aria-hidden="true"
             className="pointer-events-none absolute right-6 top-6 z-20 text-right font-serif text-3xl leading-none text-[#f7ead9]/45 sm:right-12 sm:top-10 sm:text-4xl lg:right-16"
           >
             <span className="block">𓅓 𓆑</span>
-            <span className="mt-2 block text-xs tracking-[0.45em]">𓊪 𓏏 𓊃</span>
+            <span className="mt-2 block text-[1.5rem] tracking-[0.45em]">𓊪 𓏏 𓊃</span>
           </div>
 
           <div className="pointer-events-none absolute inset-x-0 top-0 z-20 flex justify-center px-6 pt-8 sm:px-12 lg:pt-12">
             <div className="text-center">
               <span
-                className="font-mono text-[0.62rem] tracking-[0.34em] text-[#f7ead9]/55"
+                className="font-mono text-[1.24rem] tracking-[0.34em] text-[#f7ead9]/55"
                 data-history-header-item
               >
                 HISTORIA - CULTURA
@@ -175,10 +175,10 @@ export function InformationMuseum() {
               data-history-entry-align="left"
               className="max-w-sm border-l border-[#f7ead9]/45 pl-5 lg:mb-3"
             >
-              <p className="font-mono text-[0.62rem] font-semibold tracking-[0.34em] text-[#f7ead9]">
+              <p className="font-mono text-[1.24rem] font-semibold tracking-[0.34em] text-[#f7ead9]">
                 PATRIMONIO NACIONAL
               </p>
-              <p className="mt-4 max-w-[34ch] font-sans text-sm leading-6 text-[#f7ead9]/75 sm:text-base sm:leading-7">
+              <p className="mt-4 max-w-[34ch] font-sans text-[1.75rem] leading-6 text-[#f7ead9]/75 sm:text-[2rem] sm:leading-7">
                 El MAAC conserva la memoria material del Ecuador: culturas
                 precolombinas, prácticas artísticas modernas y relatos que
                 siguen vivos en el presente.
@@ -191,13 +191,13 @@ export function InformationMuseum() {
                 data-history-entry-align="right"
                 className="border-l border-[#f7ead9]/30 pl-4"
               >
-                <p className="font-mono text-[0.6rem] uppercase tracking-[0.34em] text-[#f7ead9]/55">
+                <p className="font-mono text-[1.2rem] uppercase tracking-[0.34em] text-[#f7ead9]/55">
                   DAT_01 / ARQ
                 </p>
                 <p className="mt-3 font-sans text-[clamp(2.8rem,4.8vw,5.5rem)] font-black leading-[0.85] tracking-[-0.06em] text-[#f7ead9]">
                   50K<span className="text-[#f7ead9]/55">+</span>
                 </p>
-                <p className="mt-3 font-mono text-[0.6rem] uppercase tracking-[0.3em] text-[#f7ead9]/65">
+                <p className="mt-3 font-mono text-[1.2rem] uppercase tracking-[0.3em] text-[#f7ead9]/65">
                   PIEZAS ARQUEOLÓGICAS
                   <br />
                   COSTA · 8.000 A.C.–1.400 D.C.
@@ -208,13 +208,13 @@ export function InformationMuseum() {
                 data-history-entry-align="right"
                 className="border-l border-[#f7ead9]/30 pl-4"
               >
-                <p className="font-mono text-[0.6rem] uppercase tracking-[0.34em] text-[#f7ead9]/55">
+                <p className="font-mono text-[1.2rem] uppercase tracking-[0.34em] text-[#f7ead9]/55">
                   DAT_02 / MOD
                 </p>
                 <p className="mt-3 font-sans text-[clamp(2.8rem,4.8vw,5.5rem)] font-black leading-[0.85] tracking-[-0.06em] text-[#f7ead9]">
                   3.4K<span className="text-[#f7ead9]/55">+</span>
                 </p>
-                <p className="mt-3 font-mono text-[0.6rem] uppercase tracking-[0.3em] text-[#f7ead9]/65">
+                <p className="mt-3 font-mono text-[1.2rem] uppercase tracking-[0.3em] text-[#f7ead9]/65">
                   OBRAS DE ARTE MODERNO
                   <br />Y CONTEMPORÁNEO
                 </p>
@@ -235,7 +235,7 @@ export function InformationMuseum() {
               <div className="flex items-center justify-end gap-4">
                 <span className="block h-px w-12 bg-black" />
                 <p
-                  className="font-mono text-[0.62rem] font-semibold tracking-[0.34em] text-black"
+                  className="font-mono text-[1.24rem] font-semibold tracking-[0.34em] text-black"
                   data-history-header-item
                 >
                   HISTORIAS QUE NO VUELVEN
@@ -284,7 +284,7 @@ export function InformationMuseum() {
 
           <div className="relative z-30 text-center">
             <p
-              className="font-mono text-[0.62rem] font-semibold tracking-[0.34em] text-[#f7ead9]/65"
+              className="font-mono text-[1.24rem] font-semibold tracking-[0.34em] text-[#f7ead9]/65"
               data-history-header-item
             >
               SECTOR_04 // GALERÍA VIVA

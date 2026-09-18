@@ -10,6 +10,7 @@ type IntroPhase = "visible" | "fading" | "hidden";
 
 export function IntroGate({ children }: { children: ReactNode }) {
   const [phase, setPhase] = useState<IntroPhase>("visible");
+  const isIntroActive = phase !== "hidden";
 
   useEffect(() => {
     const fadeTimer = window.setTimeout(() => setPhase("fading"), INTRO_DURATION_MS);
@@ -23,7 +24,7 @@ export function IntroGate({ children }: { children: ReactNode }) {
   }, [phase]);
 
   useEffect(() => {
-    if (phase !== "visible") return;
+    if (!isIntroActive) return;
     const scrollY = window.scrollY;
     const { overflow, position, top, width } = document.body.style;
     document.body.style.overflow = "hidden";
@@ -37,20 +38,27 @@ export function IntroGate({ children }: { children: ReactNode }) {
       document.body.style.width = width;
       window.scrollTo(0, scrollY);
     };
-  }, [phase]);
-
-  if (phase === "hidden") return <>{children}</>;
+  }, [isIntroActive]);
 
   return (
     <>
-      {children}
       <div
-        className="pointer-events-none fixed top-0 left-0 z-50 transition-opacity duration-[600ms] ease-out"
-        style={{ opacity: phase === "fading" ? 0 : 1 }}
-        aria-hidden={phase === "fading"}
+        className={`contents ${isIntroActive ? "invisible pointer-events-none select-none" : ""}`}
+        inert={isIntroActive}
+        aria-hidden={isIntroActive || undefined}
       >
-        <MuseumIntro />
+        {children}
       </div>
+
+      {isIntroActive ? (
+        <div
+          className="fixed inset-0 z-[2147483647] overflow-hidden transition-opacity duration-[600ms] ease-out"
+          style={{ opacity: phase === "fading" ? 0 : 1 }}
+          aria-hidden={phase === "fading"}
+        >
+          <MuseumIntro />
+        </div>
+      ) : null}
     </>
   );
 }

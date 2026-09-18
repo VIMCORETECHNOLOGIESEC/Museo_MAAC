@@ -61,10 +61,10 @@ export function ContactInfo({ info, className }: ContactInfoProps) {
               key={row.days}
               className="flex items-baseline justify-between gap-4 border-b border-black/15 pb-1 last:border-b-0"
             >
-              <span className="font-mono text-[0.6rem] uppercase tracking-[0.3em] text-black/55">
+              <span className="font-mono text-[1.2rem] uppercase tracking-[0.3em] text-black/55">
                 {row.days}
               </span>
-              <span className="font-mono text-[0.7rem] tracking-[0.18em] text-black">
+              <span className="font-mono text-[1.4rem] tracking-[0.18em] text-black">
                 {row.hours}
               </span>
             </li>
@@ -106,10 +106,10 @@ export function ContactInfo({ info, className }: ContactInfoProps) {
           }
         >
           <div className="flex flex-col gap-1">
-            <span className="font-mono text-[0.62rem] uppercase tracking-[0.34em] text-black/55">
+            <span className="font-mono text-[1.24rem] uppercase tracking-[0.34em] text-black/55">
               {row.code}
             </span>
-            <span className="font-mono text-[0.62rem] uppercase tracking-[0.34em] text-black/70">
+            <span className="font-mono text-[1.24rem] uppercase tracking-[0.34em] text-black/70">
               {row.label}
             </span>
           </div>

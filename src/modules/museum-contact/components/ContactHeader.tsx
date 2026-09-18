@@ -20,7 +20,7 @@ export function ContactHeader({
         className="flex items-center gap-4"
       >
         <span aria-hidden className="h-px w-10 bg-black" />
-        <span className="font-mono text-[0.62rem] font-semibold uppercase tracking-[0.34em] text-black/70">
+        <span className="font-mono text-[1.24rem] font-semibold uppercase tracking-[0.34em] text-black/70">
           {eyebrow}
         </span>
       </div>
@@ -34,7 +34,7 @@ export function ContactHeader({
 
       <p
         data-history-header-item
-        className="mt-8 max-w-md font-mono text-[0.66rem] font-medium uppercase tracking-[0.34em] text-black/65"
+        className="mt-8 max-w-md font-mono text-[1.32rem] font-medium uppercase tracking-[0.34em] text-black/65"
       >
         {lead}
       </p>

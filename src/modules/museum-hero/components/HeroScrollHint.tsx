@@ -15,7 +15,7 @@ export function HeroScrollHint({ className }: HeroScrollHintProps) {
         className,
       )}
     >
-      <Small className="text-[10px] uppercase tracking-[0.3em]">Scroll</Small>
+      <Small className="text-[20px] uppercase tracking-[0.3em]">Scroll</Small>
       <svg
         width="16"
         height="16"

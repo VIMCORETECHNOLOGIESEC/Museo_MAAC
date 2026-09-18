@@ -26,7 +26,7 @@ export function ContactForm({
       <div className="flex flex-col gap-3">
         <label
           htmlFor="contact-name"
-          className="flex items-baseline gap-3 font-mono text-[0.7rem] font-semibold uppercase tracking-[0.34em] text-black"
+          className="flex items-baseline gap-3 font-mono text-[1.4rem] font-semibold uppercase tracking-[0.34em] text-black"
         >
           <span className="text-black/45">01</span>
           <span>Nombre</span>
@@ -47,7 +47,7 @@ export function ContactForm({
       <div className="flex flex-col gap-3">
         <label
           htmlFor="contact-email"
-          className="flex items-baseline gap-3 font-mono text-[0.7rem] font-semibold uppercase tracking-[0.34em] text-black"
+          className="flex items-baseline gap-3 font-mono text-[1.4rem] font-semibold uppercase tracking-[0.34em] text-black"
         >
           <span className="text-black/45">02</span>
           <span>Correo electrónico</span>
@@ -68,7 +68,7 @@ export function ContactForm({
       <div className="flex flex-col gap-3">
         <label
           htmlFor="contact-message"
-          className="flex items-baseline gap-3 font-mono text-[0.7rem] font-semibold uppercase tracking-[0.34em] text-black"
+          className="flex items-baseline gap-3 font-mono text-[1.4rem] font-semibold uppercase tracking-[0.34em] text-black"
         >
           <span className="text-black/45">03</span>
           <span>Mensaje</span>
@@ -86,10 +86,10 @@ export function ContactForm({
       </div>
 
       <div className="flex items-center justify-between border-t border-black pt-5">
-        <span className="font-mono text-[0.6rem] uppercase tracking-[0.34em] text-black/55"></span>
+        <span className="font-mono text-[1.2rem] uppercase tracking-[0.34em] text-black/55"></span>
         <button
           type="submit"
-          className="group inline-flex items-center gap-3 bg-black px-7 py-4 font-mono text-xs font-semibold tracking-[0.22em] text-white transition-colors hover:bg-white hover:text-black focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"
+          className="group inline-flex items-center gap-3 bg-black px-7 py-4 font-mono text-[1.5rem] font-semibold tracking-[0.22em] text-white transition-colors hover:bg-white hover:text-black focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"
         >
           <span className="block h-2 w-2 bg-white transition-colors group-hover:bg-black" />
           ENVIAR MENSAJE

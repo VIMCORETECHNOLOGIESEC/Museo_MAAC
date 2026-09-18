@@ -2,16 +2,20 @@
 
 import { useEffect, useState } from "react";
 import { MuseumMark } from "@/shared/ui";
+import {
+  MuseumCategoryIcon,
+  museumCategoryIconCount,
+} from "./MuseumCategoryIcon";
 
-const museumMarks = [0, 1, 2, 3, 4];
+const ICON_INTERVAL_MS = 700;
 
 export function MuseumIntro() {
   const [activeMark, setActiveMark] = useState(0);
 
   useEffect(() => {
     const iconTimer = window.setInterval(() => {
-      setActiveMark((current) => (current + 1) % museumMarks.length);
-    }, 1000);
+      setActiveMark((current) => (current + 1) % museumCategoryIconCount);
+    }, ICON_INTERVAL_MS);
     return () => window.clearInterval(iconTimer);
   }, []);
 
@@ -27,13 +31,13 @@ export function MuseumIntro() {
       <p
         className="flex flex-1 items-center text-center text-[clamp(4rem,13vw,9rem)] font-light leading-none tracking-[-0.08em]"
         aria-live="polite"
-        aria-label="Cargando el museo"
+        aria-label="MAAC Museo"
       >
-        Load
+        MA
         <span key={activeMark} className="maac-intro-icon mx-[0.06em] inline-block size-[0.85em]">
-          <MuseumMark variant={museumMarks[activeMark]} />
+          <MuseumCategoryIcon index={activeMark} />
         </span>
-        ing
+        AC
       </p>
     </div>
   );

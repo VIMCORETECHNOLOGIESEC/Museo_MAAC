@@ -87,7 +87,7 @@ export function createHistoryReveal(root: HTMLElement): ScrollTrigger[] {
       createScrollTrigger({
         trigger: headerItems[0],
         start: defaultScrollConfig.start,
-        toggleActions: defaultScrollConfig.toggleActions,
+        toggleActions: "play none none none",
         onEnter: () => {
           gsap.from(headerItems, {
             opacity: 0,
