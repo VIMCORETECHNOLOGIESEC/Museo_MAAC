@@ -2,6 +2,8 @@
 @import "../styles/tokens.css";
 
 @theme inline {
+  --color-black: #4a2d26;
+  --color-white: #f7ebdb;
   --color-background: var(--color-background);
   --color-foreground: var(--color-foreground);
   --color-surface: var(--color-surface);

@@ -4,7 +4,7 @@
   --color-background: hsl(40 20% 98% / <alpha-value>);
   --color-foreground: hsl(30 15% 12% / <alpha-value>);
 
-  --color-surface: hsl(0 0% 100% / <alpha-value>);
+  --color-surface: #f7ebdb;
   --color-surface-elevated: hsl(40 15% 96% / <alpha-value>);
 
   --color-muted: hsl(40 12% 94% / <alpha-value>);

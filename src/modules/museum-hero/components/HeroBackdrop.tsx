@@ -23,7 +23,7 @@ export function HeroBackdrop({ className }: HeroBackdropProps) {
         aria-hidden="true"
         className={cn(
           "absolute inset-y-0 left-0 -z-10 w-full md:w-3/4",
-          "bg-[radial-gradient(ellipse_at_30%_60%,rgba(0,0,0,0.55)_0%,transparent_65%),radial-gradient(ellipse_at_10%_30%,rgba(0,0,0,0.4)_0%,transparent_60%),radial-gradient(ellipse_at_60%_80%,rgba(0,0,0,0.3)_0%,transparent_55%)]",
+          "bg-[radial-gradient(ellipse_at_30%_60%,rgba(74,45,38,0.55)_0%,transparent_65%),radial-gradient(ellipse_at_10%_30%,rgba(74,45,38,0.4)_0%,transparent_60%),radial-gradient(ellipse_at_60%_80%,rgba(74,45,38,0.3)_0%,transparent_55%)]",
           "blur-2xl",
         )}
       />
