@@ -1,0 +1,147 @@
+// Animation utilities — Sass. Owner extends as needed.
+
+@mixin ease-out-soft {
+  transition-timing-function: var(--ease-out-soft);
+}
+
+@mixin ease-in-out-smooth {
+  transition-timing-function: var(--ease-in-out-smooth);
+}
+
+@mixin ease-in-snap {
+  transition-timing-function: var(--ease-in-snap);
+}
+
+@mixin motion-duration($key) {
+  transition-duration: var(--duration-#{$key});
+}
+
+@keyframes mu-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mu-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mu-blur-in {
+  from {
+    opacity: 0;
+    filter: blur(12px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes mu-slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes mu-slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mu-fade-up {
+  animation-name: mu-fade-up;
+  animation-duration: var(--duration-base);
+  animation-timing-function: var(--ease-out-soft);
+  animation-fill-mode: both;
+}
+
+.mu-fade-in {
+  animation-name: mu-fade-in;
+  animation-duration: var(--duration-base);
+  animation-timing-function: var(--ease-out-soft);
+  animation-fill-mode: both;
+}
+
+.mu-blur-in {
+  animation-name: mu-blur-in;
+  animation-duration: var(--duration-slow);
+  animation-timing-function: var(--ease-out-soft);
+  animation-fill-mode: both;
+}
+
+.mu-slide-in-left {
+  animation-name: mu-slide-in-left;
+  animation-duration: var(--duration-base);
+  animation-timing-function: var(--ease-out-soft);
+  animation-fill-mode: both;
+}
+
+.mu-slide-in-right {
+  animation-name: mu-slide-in-right;
+  animation-duration: var(--duration-base);
+  animation-timing-function: var(--ease-out-soft);
+  animation-fill-mode: both;
+}
+
+.mu-paused {
+  animation-play-state: paused;
+}
+
+@keyframes maac-intro-icon-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.maac-intro-icon {
+  animation: maac-intro-icon-in var(--duration-slow) var(--ease-out-soft) both;
+}
+
+@keyframes maac-intro-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.maac-intro-draw path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: maac-intro-draw 2.2s var(--ease-in-out-smooth) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .maac-intro-icon {
+    animation-duration: var(--duration-fast);
+  }
+
+  .maac-intro-draw path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}
